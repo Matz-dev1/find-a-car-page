@@ -27,8 +27,12 @@ export interface CarProps {
   year: number;
 }
 export interface FilterProps {
-  manufacturer: string;
-  year: number;
-  fuel: string;
-  model: string;
+  manufacturer?: string;
+  year?: number;
+  fuel?: string;
+  model?: string;
+}
+
+export interface HomeProps {
+  searchParams: FilterProps;
 }
